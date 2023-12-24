@@ -390,11 +390,11 @@ plt.show()
 import joblib
 
 #Save the model as a pickle file
-filename = 'D:/Kuliah/Dicoding/project/Bike-sharing-dataset/bike-rent.pkl'
+filename = 'bike-rent.pkl'
 joblib.dump(model, filename)
 
 #Load the model from the file
-loaded_model = joblib.load('D:/Kuliah/Dicoding/project/Bike-sharing-dataset/bike-rent.pkl')
+loaded_model = joblib.load('bike-rent.pkl')
 
 #Create a numpy array containing a new observation (for example tomorrow's seasonal and weather forecast information)
 X_new = np.array([[1,1,0,3,1,1,0.226957,0.22927,0.436957,0.1869]]).astype('float64')
